@@ -68,7 +68,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                dir('/var/lib/jenkins/workspace/employee-management-pipeline') {
+                dir('/var/lib/jenkins/workspace/employee-management@2') {
                     sh '''
                     docker compose down || true
                     docker compose up -d
